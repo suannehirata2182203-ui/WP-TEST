@@ -1,0 +1,9 @@
+[phases.setup]
+nixPkgs = ["nginx"]
+
+[phases.build]
+cmds = ["echo 'Static site ready'"]
+
+[start]
+cmd = "nginx -c /app/nginx.conf -g 'daemon off;'"
+
