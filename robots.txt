@@ -1,0 +1,38 @@
+# robots.txt for Sports Events USA Guide
+# https://sportseventsusa.guide
+
+# Allow all crawlers
+User-agent: *
+
+# Allow access to all pages
+Allow: /
+
+# Sitemap location
+Sitemap: https://sportseventsusa.guide/sitemap.xml
+
+# Crawl-delay (optional, for politeness)
+Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing specific  
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block common non-content directories if they exist
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /*.json$
+Disallow: /*.xml$
+Allow: /sitemap.xml
+
+# Allow CSS and JS for rendering
+Allow: /css/
+Allow: /js/
+
+
